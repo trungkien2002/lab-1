@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp"
+    tools:context=".SignUp">
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_arrow_back"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="34dp"
+        android:text="Đăng ký"
+        android:layout_marginHorizontal="15dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username:"
+        android:layout_marginHorizontal="15dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/edtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập username"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/edittext_border"
+        android:layout_marginTop="5dp"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:textColorHint="#888888"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:layout_marginHorizontal="15dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập password"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/edittext_border"
+        android:layout_marginTop="5dp"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColorHint="#888888"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_signup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="15dp"
+        android:text="SIGN UP"
+        app:backgroundTint="#FF4C00"
+        app:cornerRadius="7dp"
+        app:strokeColor="#000000"
+        app:strokeWidth="2dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+
+</LinearLayout>
